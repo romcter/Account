@@ -1,6 +1,6 @@
-package com.shop.flowerShop;
+package com.shop.account;
 
-import com.shop.flowerShop.dto.UserDto;
+import com.shop.account.dto.UserDto;
 
 public class Util {
 

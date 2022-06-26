@@ -1,7 +1,7 @@
-package com.shop.flowerShop.controller;
+package com.shop.account.controller;
 
-import com.shop.flowerShop.dto.UserDto;
-import com.shop.flowerShop.service.UserService;
+import com.shop.account.dto.UserDto;
+import com.shop.account.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

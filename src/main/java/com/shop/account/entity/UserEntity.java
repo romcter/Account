@@ -1,4 +1,4 @@
-package com.shop.flowerShop.entity;
+package com.shop.account.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

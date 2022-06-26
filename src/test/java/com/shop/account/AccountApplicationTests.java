@@ -1,10 +1,10 @@
-package com.shop.flowerShop;
+package com.shop.account;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FlowerShopApplicationTests {
+class AccountApplicationTests {
 
 	@Test
 	void contextLoads() {

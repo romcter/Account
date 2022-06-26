@@ -1,6 +1,6 @@
-package com.shop.flowerShop.repository;
+package com.shop.account.repository;
 
-import com.shop.flowerShop.entity.UserEntity;
+import com.shop.account.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<UserEntity, Long> {

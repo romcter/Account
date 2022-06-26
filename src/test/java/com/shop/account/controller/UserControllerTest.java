@@ -1,10 +1,10 @@
-package com.shop.flowerShop.controller;
+package com.shop.account.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.shop.flowerShop.dto.UserDto;
-import com.shop.flowerShop.exception.GlobalExceptionHandler;
-import com.shop.flowerShop.exception.ResourceNotFoundException;
-import com.shop.flowerShop.service.UserService;
+import com.shop.account.dto.UserDto;
+import com.shop.account.exception.GlobalExceptionHandler;
+import com.shop.account.exception.ResourceNotFoundException;
+import com.shop.account.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,10 +19,10 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.io.IOException;
 
-import static com.shop.flowerShop.Util.JSON_DEFAULT_USER_DTO;
-import static com.shop.flowerShop.Util.DEFAULT_USER_DTO;
-import static com.shop.flowerShop.Util.ERROR_RESPONSE;
-import static com.shop.flowerShop.Util.ERROR_MESSAGE;
+import static com.shop.account.Util.JSON_DEFAULT_USER_DTO;
+import static com.shop.account.Util.DEFAULT_USER_DTO;
+import static com.shop.account.Util.ERROR_RESPONSE;
+import static com.shop.account.Util.ERROR_MESSAGE;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;

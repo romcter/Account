@@ -1,6 +1,6 @@
-package com.shop.flowerShop.service;
+package com.shop.account.service;
 
-import com.shop.flowerShop.dto.UserDto;
+import com.shop.account.dto.UserDto;
 import org.springframework.stereotype.Service;
 
 @Service

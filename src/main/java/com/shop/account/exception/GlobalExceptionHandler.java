@@ -1,4 +1,4 @@
-package com.shop.flowerShop.exception;
+package com.shop.account.exception;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

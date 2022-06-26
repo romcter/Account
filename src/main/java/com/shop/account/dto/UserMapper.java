@@ -1,6 +1,6 @@
-package com.shop.flowerShop.dto;
+package com.shop.account.dto;
 
-import com.shop.flowerShop.entity.UserEntity;
+import com.shop.account.entity.UserEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

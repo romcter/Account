@@ -1,4 +1,4 @@
-package com.shop.flowerShop.swagger;
+package com.shop.account.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

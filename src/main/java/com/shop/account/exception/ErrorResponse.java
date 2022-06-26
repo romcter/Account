@@ -1,4 +1,4 @@
-package com.shop.flowerShop.exception;
+package com.shop.account.exception;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

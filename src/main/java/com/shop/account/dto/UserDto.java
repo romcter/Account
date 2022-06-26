@@ -1,4 +1,4 @@
-package com.shop.flowerShop.dto;
+package com.shop.account.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

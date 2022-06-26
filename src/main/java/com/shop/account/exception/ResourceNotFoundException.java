@@ -1,4 +1,4 @@
-package com.shop.flowerShop.exception;
+package com.shop.account.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
 
