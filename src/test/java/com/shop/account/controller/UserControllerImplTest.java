@@ -33,7 +33,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
-public class UserControllerTest {
+public class UserControllerImplTest {
 
     private MockMvc mvc;
 
@@ -41,15 +41,15 @@ public class UserControllerTest {
     private UserService userService;
 
     @InjectMocks
-    private UserController userController;
+    private UserControllerImpl userControllerImpl;
 
-    public UserControllerTest() throws IOException {
+    public UserControllerImplTest() throws IOException {
     }
 
     @BeforeEach
     public void setup() {
         JacksonTester.initFields(this, new ObjectMapper());
-        mvc = MockMvcBuilders.standaloneSetup(userController)
+        mvc = MockMvcBuilders.standaloneSetup(userControllerImpl)
                 .setControllerAdvice(new GlobalExceptionHandler())
                 .build();
     }
@@ -113,24 +113,7 @@ public class UserControllerTest {
         verify(userService).updateUser(any(UserDto.class));
         assertThat(response.getContentAsString()).isEqualTo(JSON_DEFAULT_USER_DTO);
     }
-
-    @Test
-    public void failUpdate() throws Exception {
-        given(userService.updateUser(DEFAULT_USER_DTO))
-                .willReturn(DEFAULT_USER_DTO);
-
-        MockHttpServletResponse response = mvc.perform(
-                        put("/api/person")
-                                .contentType(MediaType.APPLICATION_JSON_VALUE)
-                                .accept(MediaType.APPLICATION_JSON)
-                                .content("{}"))
-                .andExpect(status().isNoContent())
-                .andReturn().getResponse();
-
-        verify(userService).updateUser(any(UserDto.class));
-        assertThat(response.getContentAsString()).isEqualTo(JSON_DEFAULT_USER_DTO);
-    }
-    //        PersonDto existing = new PersonDto(3L, "test@test.com", 13L);
+//            PersonDto existing = new PersonDto(3L, "test@test.com", 13L);
 //        PersonDto replacement = new PersonDto(3L, "chest@test.com", 12L);
 //        PersonEntity replacementEntity = PersonMapper.INSTANCE.personDtoToPerson(replacement);
 //        when(personRepository.existsById(3L)).thenReturn(true);
