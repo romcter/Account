@@ -1,6 +1,6 @@
 package com.shop.account.dto;
 
-import com.shop.account.entity.UserEntity;
+import com.shop.account.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -9,7 +9,7 @@ public interface UserMapper {
 
     UserMapper INSTANCE = Mappers.getMapper( UserMapper.class );
 
-    UserDto userToUserDto(UserEntity car);
-    UserEntity userDtoToUser(UserDto car);
+    UserDto userToUserDto(User car);
+    User userDtoToUser(UserDto car);
 
 }
